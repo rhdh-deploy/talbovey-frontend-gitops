@@ -1,0 +1,15 @@
+app:
+  name: talbovey-poi-map-app
+  namespace: talbovey
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/talbovey-frontend
+  org: rhdh-deploy
+  name: talbovey-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: talbovey/poi-map-app
+  tag: latest
